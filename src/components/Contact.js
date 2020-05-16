@@ -12,7 +12,7 @@ export default function Contact() {
         </h2>
                     <div className="bottom-line"></div>
                     <p className="lead">Here is how you can reacm me</p>
-                    <form method="POST" data-netlify="true">
+                    <form method="POST" data-netlify-recaptcha="true" data-netlify="true">
                         <Animated animationIn="flipInY" isVisible={true} className="text-fields">
 
                             <input
@@ -47,7 +47,9 @@ export default function Contact() {
                                 name="message"
                             ></textarea>
                         </Animated>
+                        <div className="py-3" data-netlify-recaptcha="true"></div>
                         <Animated animationIn="fadeInUpBig" isVisible={true} >
+
                             <button type="submit" className="btn-dark">Submit</button>
                         </Animated>
                     </form>
