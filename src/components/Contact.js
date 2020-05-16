@@ -37,7 +37,7 @@ class Contact extends React.Component {
         </h2>
                         <div className="bottom-line"></div>
                         <p className="lead">Here is how you can reach me</p>
-                        <form name="contact" onSubmit={this.handleSubmit} >
+                        <form name="contact" method="post" onSubmit={this.handleSubmit} >
                             <Animated animationIn="flipInY" isVisible={true} className="text-fields">
 
                                 <input
@@ -85,7 +85,7 @@ class Contact extends React.Component {
                             <div className="py-3" data-netlify-recaptcha="true"></div>
                             <Animated animationIn="fadeInUpBig" isVisible={true} >
 
-                                <button type="submit" formAction="/" className="btn-dark">Submit</button>
+                                <button type="submit" className="btn-dark">Submit</button>
                             </Animated>
                         </form>
                     </div>
@@ -120,6 +120,16 @@ class Contact extends React.Component {
                         <h1>Let's Talk To Me</h1>
                     </div>
                 </section >
+
+
+                {/* <!-- A little help for the Netlify bots if you're not using a SSG --> */}
+                <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+                    <input type="text" name="name" />
+                    <input type="text" name="subject" />
+                    <input type="email" name="email" />
+                    <input type="text" name="phone" />
+                    <textarea name="message"></textarea>
+                </form>
             </div >
         )
     }
