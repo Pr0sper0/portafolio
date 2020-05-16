@@ -1,9 +1,11 @@
 import React from 'react';
+import Hamburger from './Hamburger';
 import { Link } from 'react-router-dom';
 
 export default function Navigation() {
     return (
         <React.Fragment>
+            <Hamburger />
             {/* Main menu */}
             <aside>
                 <div id="header" className="header-content">

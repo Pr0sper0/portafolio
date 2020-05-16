@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
@@ -14,7 +15,7 @@ export default function Home() {
                         ></span>
                     </h1>
                     <p className="lead">I specialize in Software development</p>
-                    <a href="work.html" className="btn-light">View My Work</a>
+                    <Link to="/Portfolio" className="btn-light">View My Work</Link>
                 </div>
 
                 {/* Section A: Specialize  */}

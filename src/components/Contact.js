@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Animated } from "react-animated-css";
 
 export default function Contact() {
     return (
@@ -11,35 +12,44 @@ export default function Contact() {
         </h2>
                     <div className="bottom-line"></div>
                     <p className="lead">Here is how you can reacm me</p>
-                    <form>
-                        <div className="text-fields">
+                    <form method="POST" data-netlify="true">
+                        <Animated animationIn="flipInY" isVisible={true} className="text-fields">
+
                             <input
                                 className="text-input name-input"
                                 type="text"
                                 placeholder="Name"
+                                name="name"
                             />
-                            <input
+
+                            <input animationIn="fadeInLeft"
                                 className="text-input subject-input"
                                 type="text"
                                 placeholder="Subject"
+                                name="subject"
                             />
                             <input
                                 className="text-input email-input"
                                 type="email"
                                 placeholder="Email address"
+                                name="email"
                             />
                             <input
                                 className="text-input phone-input"
                                 type="text"
                                 placeholder="Phone Number"
+                                name="phone"
                             />
                             <textarea
                                 className="text-input message-input"
                                 type="text"
                                 placeholder="Enter Message"
+                                name="message"
                             ></textarea>
-                        </div>
-                        <button type="submit" className="btn-dark">Submit</button>
+                        </Animated>
+                        <Animated animationIn="fadeInUpBig" isVisible={true} >
+                            <button type="submit" className="btn-dark">Submit</button>
+                        </Animated>
                     </form>
                 </div>
             </section>
@@ -60,8 +70,8 @@ export default function Contact() {
                         </div>
                         <div>
                             <i className="fas fa-address fa-2x"></i>
-                            <h3>Address</h3>
-                            <p>Kolomyis'ky ln, 17/31a</p>
+                            <h3>Skype</h3>
+                            <p>valeriita1ov</p>
                         </div>
                     </div>
                 </div>
