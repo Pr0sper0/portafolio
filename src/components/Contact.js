@@ -12,7 +12,7 @@ export default function Contact() {
         </h2>
                     <div className="bottom-line"></div>
                     <p className="lead">Here is how you can reach me</p>
-                    <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                    <form name="contact" method="post" >
                         <Animated animationIn="flipInY" isVisible={true} className="text-fields">
 
                             <input
@@ -50,7 +50,7 @@ export default function Contact() {
                         <div className="py-3" data-netlify-recaptcha="true"></div>
                         <Animated animationIn="fadeInUpBig" isVisible={true} >
 
-                            <button type="submit" className="btn-dark">Submit</button>
+                            <button type="submit" formAction="/" className="btn-dark">Submit</button>
                         </Animated>
                     </form>
                 </div>
