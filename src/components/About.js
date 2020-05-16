@@ -19,12 +19,15 @@ export default function About() {
                         <div className="bio bg-light">
                             <Animated animationInDelay="300" animationInDuration="3000" animationIn="fadeIn" isVisible={true}>
                                 <h4>Your Project Is In Safe Hands</h4>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Perspiciatis nostrum, eaque velit ipsam facilis sed, quisquam
-                                    nesciunt unde nihil voluptatum commodi consequuntur molestiae?
-                                    Fugiat, perspiciatis reprehenderit. Architecto delectus vitae
-                                    deserunt!
+                                <p style={{ justifyContent: 'flex-start', textAlign: 'left' }}>
+                                    <b>Hi! I am Valerii</b>, and I pretend to be a companion for your next Project.
+                                    I practice in variant approaches to solve different assignments and I am sure we can find the best One!
+                                    As for me I always try to be proactive and openminded in new challenges. I try to find a solution in minimal time to bring satisfaction to all of us.
+                                    <div></div>
+                                    <b>Striving for excellence motivates me. </b>
+                                    I am not know-it-all person but I do my best to be empathetic both with friends and partners. Our goal is also my own goal. And we all are in one big boat
+                                    trying to paddle to better coast!:)
+
             </p> </Animated>
                         </div>
 
@@ -33,8 +36,8 @@ export default function About() {
                                 <i className="fas fa-server fa-3x"></i>
                                 <h3>Full-stack development</h3>
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-                                    magni!
+                                    I am Java oriented programmer with Experience in back-end as well as
+                                    in front-end stack.
             </p>
                             </div></Animated>
                         <Animated animationInDelay="1250" animationIn="fadeInRight">
@@ -42,8 +45,7 @@ export default function About() {
                                 <i className="fas fa-desktop fa-3x"></i>
                                 <h3>Web development</h3>
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-                                    magni!
+                                    I am a good specialist in modern web-site technologies, Javascript and Frameworks.
             </p>
                             </div></Animated>
                         <Animated animationInDelay="1600" animationIn="wobble" >
@@ -51,8 +53,7 @@ export default function About() {
                                 <i className="fas fa-database fa-3x"></i>
                                 <h3>Data management</h3>
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-                                    magni!
+                                    I have a wide experience with different types of Databases.
             </p>
                             </div></Animated>
                     </div>

@@ -7,9 +7,8 @@ class Experience extends React.Component {
         super(props);
         this.state = { width: 0, height: 0 };
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-
-
     }
+
 
     isInViewPort = el => {
         const rect = el.getBoundingClientRect();

@@ -147,7 +147,7 @@ input[class^="btn-"]:hover {
   .main-content {
     width: 100vw; } }
 
-@media (max-width: 500px) {
+@media (max-width: 660px) {
   #main-nav {
     flex-direction: column;
     align-items: center; }
@@ -652,7 +652,7 @@ img {
 #about-a .award-3 {
   background-color: #fff;
   padding: 0.1rem;
-  margin: 2rem;
+  margin: 1.3rem;
   box-shadow: 0 -5px 15px 0 rgba(34, 6, 6, 0.3); }
 
 #about-a .award-1 {
@@ -777,7 +777,7 @@ img {
   .main-content {
     width: 100vw; } }
 
-@media (max-width: 500px) {
+@media (max-width: 660px) {
   #main-nav {
     flex-direction: column;
     align-items: center; }
