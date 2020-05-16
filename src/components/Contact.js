@@ -1,5 +1,6 @@
 import React from 'react';
 import { Animated } from "react-animated-css";
+import { BrowserRouter } from 'react-router-dom';
 
 class Contact extends React.Component {
 
@@ -16,9 +17,8 @@ class Contact extends React.Component {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...this.state })
         })
-            .then(() => alert("Success!"))
+            .then(() => alert("Success!")).then(setTimeout(() => this.props.history.push('/home'), 3000))
             .catch(error => alert(error));
-
         e.preventDefault();
     };
 
@@ -120,16 +120,6 @@ class Contact extends React.Component {
                         <h1>Let's Talk To Me</h1>
                     </div>
                 </section >
-
-
-                {/* <!-- A little help for the Netlify bots if you're not using a SSG --> */}
-                <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-                    <input type="text" name="name" />
-                    <input type="text" name="subject" />
-                    <input type="email" name="email" />
-                    <input type="text" name="phone" />
-                    <textarea name="message"></textarea>
-                </form>
             </div >
         )
     }
