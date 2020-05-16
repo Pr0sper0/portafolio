@@ -11,8 +11,8 @@ export default function Contact() {
                         Contact Me
         </h2>
                     <div className="bottom-line"></div>
-                    <p className="lead">Here is how you can reacm me</p>
-                    <form method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                    <p className="lead">Here is how you can reach me</p>
+                    <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                         <Animated animationIn="flipInY" isVisible={true} className="text-fields">
 
                             <input
