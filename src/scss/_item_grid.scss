@@ -8,6 +8,7 @@
   position: relative;
   background: $main-color;
   overflow: hidden;
+  z-index: 0;
 
   &::after {
     content: "";

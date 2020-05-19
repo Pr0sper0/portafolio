@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Animated } from "react-animated-css";
 import { BrowserRouter } from 'react-router-dom';
 
@@ -10,6 +10,7 @@ class Contact extends React.Component {
             name: "", subject: "", email: "", phone: "", message: ""
         };
     }
+
 
     handleSubmit = e => {
         fetch("/", {

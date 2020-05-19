@@ -1,44 +1,15 @@
 import React from 'react';
-import { run } from './viewport';
+import { Animated } from 'react-animated-css';
 
 class Experience extends React.Component {
     items = document.querySelectorAll('#timeline li')
     constructor(props) {
         super(props);
         this.state = { width: 0, height: 0 };
-        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+
     }
 
 
-    isInViewPort = el => {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <=
-            (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth ||
-                document.documentElement.clientWidth)
-        )
-    };
-
-    run = () => this.items.forEach(item => {
-        if (this.isInViewPort(item)) {
-            item.classList.add('show');
-        }
-    })
-
-    componentDidMount() {
-        this.updateWindowDimensions();
-        window.addEventListener('resize', this.updateWindowDimensions);
-        window.addEventListener('load', this.run);
-        window.addEventListener('resize', this.run);
-        window.addEventListener('scroll', this.run);
-    }
-
-    updateWindowDimensions() {
-        this.setState({ width: window.innerWidth, height: window.innerHeight });
-    }
 
     render() {
         return (
@@ -46,70 +17,118 @@ class Experience extends React.Component {
                 <div id="experience-header">
                     <div className="container">
                         <h1><i className="fas fa-brain">Experience timeline</i></h1>
-                        <h3><i className="fas fa-user">Valerii Tarasov</i></h3>
+                        {/* <h3><i className="fas fa-user">Valerii Tarasov</i></h3> */}
                     </div>
                 </div>
                 <section id="timeline">
                     <ul>
-                        <li>
-                            <div>
+
+                        <li className="show">
+                            <Animated animationInDelay="250" animationIn="fadeInUp">
+
                                 <h3>
-                                    <i className="fas fa-chevron-right">Lorem ipsum dolor sit. </i>
+                                    <i className="fas fa-chevron-right">November 2018 – till now </i>
                                 </h3>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-                                    amet earum beatae debitis inventore aspernatur corrupti magni
-                                    totam tempore illum.
-                </p>
-                            </div>
+                                <h4>GlobalLogic </h4>
+
+                                    -	Development of new Information Collection System.
+                                    <p>
+                                    Technologies: React.js, JavaScript, Spring Rest, Oracle/SQL, HTML, CSS
+                                    </p>
+                            </Animated>
                         </li>
-                        <li>
-                            <div>
+
+                        <li className="show">
+                            <Animated animationInDelay="750" animationIn="fadeInUp">
+
                                 <h3>
-                                    <i className="fas fa-chevron-right">Lorem ipsum dolor sit. </i>
+                                    <i className="fas fa-chevron-right">March 2015 </i>
                                 </h3>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-                                    amet earum beatae debitis inventore aspernatur corrupti magni
-                                    totam tempore illum.
-                </p>
-                            </div>
+                                <h4>GlobalLogic </h4>
+
+                                    -	Development and	Maintenance engineering in Java products using desktop and web specification.
+                                    <p>
+                                    Technologies: Java SE, Java EE, JSP, JavaScript, HTML, CSS, Shell, XML, SQL; Apache, Tomcat, IIS
+                                    </p>
+                            </Animated>
                         </li>
-                        <li>
-                            <div>
+                        <li className="show">
+                            <Animated animationInDelay="1250" animationIn="fadeInUp">
+
                                 <h3>
-                                    <i className="fas fa-chevron-right">Lorem ipsum dolor sit. </i>
+                                    <i className="fas fa-chevron-right">July 2014 – March 2015 </i>
                                 </h3>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-                                    amet earum beatae debitis inventore aspernatur corrupti magni
-                                    totam tempore illum.
-                </p>
-                            </div>
+                                <h4>Kyivstar Telecom </h4>
+
+                                    -   Development and Maintenance of customer-service applications;
+                                    -	Customer support with SMS/MMS advertising services;
+                                    -	fetch on request from the RDBMS(ORACLE);
+
+                                    <p>
+                                    Technologies: Java EE, JSP, HTML, XML, SQL
+                                    </p>
+                            </Animated>
                         </li>
-                        <li>
-                            <div>
+                        <li className="show">
+                            <Animated animationInDelay="1750" animationIn="fadeInUp">
+
                                 <h3>
-                                    <i className="fas fa-chevron-right">Lorem ipsum dolor sit. </i>
+                                    <i className="fas fa-chevron-right">May 2013 – July 2014 </i>
                                 </h3>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-                                    amet earum beatae debitis inventore aspernatur corrupti magni
-                                    totam tempore illum.
-                </p>
-                            </div>
+                                <h4>Government Enterprise “Antonov”  </h4>
+
+                                    -   Development of new Document management system
+
+                                    <p>
+                                    Technologies: Java EE, JPA, JSP, JSF, JavaScript;
+                                    Glassfish Server; RDBMS: MySQL; Web: XHTML, CSS;
+                                    </p>
+                            </Animated>
                         </li>
-                        <li>
-                            <div>
+                        <li className="show">
+                            <Animated animationInDelay="2250" animationIn="fadeInUp">
+
                                 <h3>
-                                    <i className="fas fa-chevron-right">Lorem ipsum dolor sit. </i>
+                                    <i className="fas fa-chevron-right">March 2011 - May 2013</i>
                                 </h3>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-                                    amet earum beatae debitis inventore aspernatur corrupti magni
-                                    totam tempore illum.
-                </p>
-                            </div>
+                                <h4>Government Enterprise “Antonov”  </h4>
+
+                                    - Desktop applications development for aviation flight analysis;
+
+                                    <p>
+                                    Technologies: C++ GUI, MFC;
+                                    </p>
+                            </Animated>
+                        </li>
+                        <li className="show">
+                            <Animated animationInDelay="2750" animationIn="fadeInUp">
+
+                                <h3>
+                                    <i className="fas fa-chevron-right">February 2010 - March 2011</i>
+                                </h3>
+                                <h4>BookStore marketing </h4>
+
+                                - Financial turnover analysis;
+
+                                    <p>
+                                    Technologies: Access, Excel, 1C;
+                                    </p>
+                            </Animated>
+                        </li>
+                        <li className="show">
+                            <Animated animationInDelay="3250" animationIn="fadeInUp">
+
+                                <h3>
+                                    <i className="fas fa-chevron-right">February 2008 - June 2009</i>
+                                </h3>
+                                <h4>Bank "Pravex" </h4>
+
+                                    - Financial and credit history analysis;
+
+                                    <p>
+                                    Technologies: Access, Excel;
+                                    </p>
+                            </Animated>
                         </li>
                     </ul>
                 </section>

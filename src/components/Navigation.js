@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Hamburger from './Hamburger';
 import { Link } from 'react-router-dom';
 
 export default function Navigation() {
+
+    const [current, setCurrent] = useState(0);
+
     return (
         <React.Fragment>
             <Hamburger />
@@ -24,11 +27,11 @@ export default function Navigation() {
                         </div>
                         <nav id="main-nav">
                             <ul>
-                                <li><Link to="/" className="current">Home</Link></li>
-                                <li><Link to="/about">About me</Link></li>
-                                <li><Link to="/experience">Experience</Link></li>
-                                <li><Link to="/portfolio">Portfolio</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
+                                <li><Link to="/" onClick={() => setCurrent(1)} className={(current === 1) ? "current" : ""}>Home</Link></li>
+                                <li><Link to="/about" onClick={() => setCurrent(2)} className={(current === 2) ? "current" : ""} >About me</Link></li>
+                                <li><Link to="/experience" onClick={() => setCurrent(3)} className={(current === 3) ? "current" : ""}>Experience</Link></li>
+                                <li><Link to="/portfolio" onClick={() => setCurrent(4)} className={(current === 4) ? "current" : ""}>Portfolio</Link></li>
+                                <li><Link to="/contact" onClick={() => setCurrent(5)} className={(current === 5) ? "current" : ""}>Contact</Link></li>
                             </ul>
                         </nav>
 

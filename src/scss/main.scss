@@ -164,6 +164,7 @@ img {
 
 .main-content {
   width: calc(100% - 250px);
+  margin-top: 0.5rem;
   float: right;
   overflow: auto;
 }
@@ -245,11 +246,13 @@ img {
   }
   // Section C
   &-c {
+    font-family: "Raleway";
     .process {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 1.5rem;
+      grid-gap: 1rem;
       text-align: center;
+      padding: 1rem;
 
       &-step {
         position: absolute;
@@ -388,8 +391,23 @@ img {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 1rem;
-      img {
-        width: 70%;
+      padding: 1rem;
+
+      .fa-react {
+        width: 80%;
+        color: $blue-color;
+      }
+      .fa-java {
+        width: 80%;
+        color: red;
+      }
+      .fa-js {
+        width: 80%;
+        color: $red-color;
+      }
+      .fa-html5 {
+        width: 80%;
+        color: $main-color;
       }
     }
   }

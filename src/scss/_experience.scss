@@ -5,9 +5,9 @@
 }
 
 .main-content #experience-header {
-  background: #222233;
+  background: rgb(180, 255, 224);
   padding: 4rem 0;
-  color: #fff;
+  color: $dark-color;
 }
 
 .container {
@@ -15,12 +15,13 @@
   margin: 0 auto;
   text-align: center;
 }
-/* Create line */
+
 #timeline ul {
   background: #eee;
   padding: 50px 0;
 }
 
+/* Create line */
 #timeline ul li {
   list-style: none;
   position: relative;
@@ -36,22 +37,26 @@
   bottom: 0;
   width: 400px;
   padding: 1rem;
-  background: #888899;
-  transition: all 0.5s ease-in-out;
+  background: $light-color;
+  transition: all 1s ease-in-out;
   visibility: visible;
   opacity: 1;
+  box-shadow: 0 -5px 15px 0 rgba($color: #220606, $alpha: 0.3);
+}
+
+#timeline ul li div:hover {
+  background-color: white;
 }
 
 /* Right Side */
 #timeline ul li:nth-child(odd) div {
   left: 40px;
-  transform: translate(200px, 0);
 }
 
 /* Left Side */
 #timeline ul li:nth-child(even) div {
   left: -470px;
-  transform: translate(-200px, 0);
+  transform: translate(0px, 0);
 }
 
 /* Dots */
@@ -87,7 +92,6 @@
 
 /* Show Boxes */
 #timeline ul li.show div {
-  transform: none;
   visibility: visible;
   opacity: 1;
 }
@@ -118,7 +122,7 @@
   }
 
   #timeline ul li div {
-    width: calc(100vw - 390px);
+    width: calc(100vw - 100px);
   }
 
   #timeline ul li:nth-child(even) div {
