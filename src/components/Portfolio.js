@@ -19,8 +19,23 @@ export default function Portfolio() {
                             </div>
                             <div className="item-text">
                                 <div className="item-text-wrap">
-                                    <p className="item-text-category">Design</p>
-                                    <h2 className="item-text-title">Great Gradients</h2>
+                                    <a target="_blank" href="https://dailymanagement.herokuapp.com/">
+                                        <p className="item-text-category">Daily management tool</p>
+                                    </a>
+                                    <h2 className="item-text-title">Spring MVC+Security/React/MySQL</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="item-image">
+                                <img src={require("../img/items/item2_2.png")} alt="" />
+                            </div>
+                            <div className="item-text">
+                                <div className="item-text-wrap">
+                                    <a target="_blank">
+                                        <p className="item-text-category">Ukrainian movies</p>
+                                    </a>
+                                    <h2 className="item-text-title">MERN + Strapi CMS</h2>
                                 </div>
                             </div>
                         </div>
@@ -30,22 +45,14 @@ export default function Portfolio() {
                             </div>
                             <div className="item-text">
                                 <div className="item-text-wrap">
-                                    <p className="item-text-category">UI/UX</p>
-                                    <h2 className="item-text-title">World Experience</h2>
+                                    <a target="_blank">
+                                        <p className="item-text-category">Delivery Food service</p>
+                                    </a>
+                                    <h2 className="item-text-title">Node/React/Bootstrap</h2>
                                 </div>
                             </div>
                         </div>
-                        <div className="item">
-                            <div className="item-image">
-                                <img src={require("../img/items/item2_1.png")} alt="" />
-                            </div>
-                            <div className="item-text">
-                                <div className="item-text-wrap">
-                                    <p className="item-text-category">Software Development</p>
-                                    <h2 className="item-text-title">Vanishing</h2>
-                                </div>
-                            </div>
-                        </div>
+
                         {/* <div className="item">
                             <div className="item-image">
                                 <img src={require("../img/items/item1_1.png")} alt="" />
@@ -82,6 +89,6 @@ export default function Portfolio() {
                     </div>
                 </div>
             </section>
-        </div>
+        </div >
     )
 }

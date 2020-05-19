@@ -10,6 +10,17 @@
   overflow: hidden;
   z-index: 0;
 
+  a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  a:hover {
+    color: $dark-blue;
+    text-decoration: underline;
+  }
+
   &::after {
     content: "";
     position: absolute;
