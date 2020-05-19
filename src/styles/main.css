@@ -549,7 +549,6 @@ img {
 
 .main-content {
   width: calc(100% - 250px);
-  margin-top: 0.5rem;
   float: right;
   overflow: auto; }
 
@@ -562,10 +561,16 @@ img {
   margin: auto;
   background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.6)), url("../img/background/P50520-202802-min.jpg") no-repeat center right/cover;
   height: 100vh;
+  line-height: 2rem;
   color: #fff; }
   #main-home h1 {
     font-size: 3rem;
     line-height: 1.2; }
+  #main-home .typewriter {
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    color: #ffbc00; }
 
 #main-inner {
   background: url("../img/background/P50520-202802-min.jpg") no-repeat 20% 30%/cover;

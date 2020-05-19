@@ -164,7 +164,6 @@ img {
 
 .main-content {
   width: calc(100% - 250px);
-  margin-top: 0.5rem;
   float: right;
   overflow: auto;
 }
@@ -180,12 +179,19 @@ img {
     background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.6)),
       $bg-image no-repeat center right / cover;
     height: 100vh;
-
+    line-height: 2rem;
     color: #fff;
 
     h1 {
       font-size: 3rem;
       line-height: 1.2;
+    }
+
+    .typewriter {
+      font-size: 1.6rem;
+      font-weight: bolder;
+      margin-bottom: 1rem;
+      color: $main-color;
     }
   }
 

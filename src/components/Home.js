@@ -1,20 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Typewriter from 'typewriter-effect';
+
 export default function Home() {
     return (
         <div className="main-content">
             <div id="main" className="site-main">
                 <div id="main-home">
                     <h1>
-                        I Am Valerii The
-            <span
-                            className="txt-type"
-                            data-wait="2000"
-                            data-words='["FullStack Dev", "UI/UX Dev", "Software Eng"]'
-                        ></span>
+                        I Am Valerii 
                     </h1>
                     <p className="lead">I specialize in Software development</p>
+                    
+                    <span className="typewriter">
+                        
+                                <Typewriter
+                                                    options={{
+                                strings: ["FullStack Development", "UI/UX Development", "Software Engeneering"],
+                                autoStart: true,
+                                loop: true,
+                                delay: 100,
+                                deleteSpeed: 40,
+
+                            }}
+
+                            />
+                    </span>
+                           
+                    
                     <Link to="/Portfolio" className="btn-light">View My Work</Link>
                 </div>
 
@@ -80,8 +94,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-
-               </section>
+                </section>
             </div>
         </div >
     )

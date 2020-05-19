@@ -15,7 +15,7 @@ export default function Portfolio() {
                     <div className="items">
                         <div className="item">
                             <div className="item-image">
-                                <img src={require("../img/items/item1_1.png")} alt="" />
+                                <img src={require("../img/items/item1_3.png")} alt="" />
                             </div>
                             <div className="item-text">
                                 <div className="item-text-wrap">
@@ -37,7 +37,7 @@ export default function Portfolio() {
                         </div>
                         <div className="item">
                             <div className="item-image">
-                                <img src={require("../img/items/item1_1.png")} alt="" />
+                                <img src={require("../img/items/item2_1.png")} alt="" />
                             </div>
                             <div className="item-text">
                                 <div className="item-text-wrap">
@@ -46,7 +46,7 @@ export default function Portfolio() {
                                 </div>
                             </div>
                         </div>
-                        <div className="item">
+                        {/* <div className="item">
                             <div className="item-image">
                                 <img src={require("../img/items/item1_1.png")} alt="" />
                             </div>
@@ -78,7 +78,7 @@ export default function Portfolio() {
                                     <h2 className="item-text-title">Quiz Application</h2>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
