@@ -14,7 +14,7 @@ export default function About() {
         </p>
                     <div className="about-info">
 
-                        <img src={require("../img/about_me.jpg")} alt="" className="bio-image" />
+                        <img src={require("../img/background/P50531-141010_small-min.jpg")} alt="" className="bio-image" />
 
                         <div className="bio bg-light">
                             <Animated animationInDelay="300" animationInDuration="3000" animationIn="fadeIn" isVisible={true}>
@@ -121,54 +121,44 @@ export default function About() {
                 <div className="container">
                     <h2 className="section-title">Testimonials</h2>
                     <div className="bottom-line"></div>
-                    <p className="lead text-center">Take a look at what my clients say...</p>
+                    <p className="lead text-center">Take a look at what my partners say...</p>
                     <div className="testimonials">
                         <div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptates officiis quia nostrum nam ab vel laudantium, ea,
-                                corrupti culpa illum soluta ipsam eos, eius ad error voluptate
-                                sint? Non, fugit!
+                                Valerii is an excellent technical expert, writes in several programming languages.
+                                He knows how to properly motivate, listen and direct, working with him was a pleasure.
             </p>
                             <ul>
-                                <li><img src="img/testimonials/person1.jpg" alt="" /></li>
-                                <li>Sam Smith, New York</li>
+                                <li><img src={require("../img/testimonials/i_kholodniuk-min.jpg")} alt="" /></li>
+                                <li>Ievgeniia Kholodniuk, QA specialist</li>
                             </ul>
                         </div>
                         <div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptates officiis quia nostrum nam ab vel laudantium, ea,
-                                corrupti culpa illum soluta ipsam eos, eius ad error voluptate
-                                sint? Non, fugit!
+                                I appreciate meeting with Valery. He is a highly skilled specialist, working with him makes
+                                it easy to quickly understand information and build up own knowledge.
             </p>
                             <ul>
-                                <li><img src="img/testimonials/person2.jpg" alt="" /></li>
-                                <li>Sara Williams, Michigan</li>
+                                <li><img src={require("../img/testimonials/o_shovkoplias-min.jpg")} alt="" /></li>
+                                <li>Oleksii Shovkoplias, Full-stack dev</li>
                             </ul>
                         </div>
                         <div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptates officiis quia nostrum nam ab vel laudantium, ea,
-                                corrupti culpa illum soluta ipsam eos, eius ad error voluptate
-                                sint? Non, fugit!
+                                I hope for a productive and no less effective work in the future!
             </p>
                             <ul>
-                                <li><img src="img/testimonials/person3.jpg" alt="" /></li>
-                                <li>Jill Johnson, London</li>
+                                <li><img src={require("../img/testimonials/i_onoprienko-min.jpg")} alt="" /></li>
+                                <li>Ievgen Onoprienko, QA automation</li>
                             </ul>
                         </div>
                         <div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptates officiis quia nostrum nam ab vel laudantium, ea,
-                                corrupti culpa illum soluta ipsam eos, eius ad error voluptate
-                                sint? Non, fugit!
+                                In difficult situations, Valerii will not leave without help
             </p>
                             <ul>
-                                <li><img src="img/testimonials/person4.jpg" alt="" /></li>
-                                <li>Steve Thompson, Boston</li>
+                                <li><img src={require("../img/testimonials/i_voitushenko-min.jpg")} alt="" /></li>
+                                <li>Ievgen Voitushenko, DB operationist</li>
                             </ul>
                         </div>
                     </div>
