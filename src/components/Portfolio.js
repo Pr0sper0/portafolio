@@ -32,7 +32,7 @@ export default function Portfolio() {
                             </div>
                             <div className="item-text">
                                 <div className="item-text-wrap">
-                                    <a target="_blank">
+                                    <a target="_blank" href="https://kinopanorama.netlify.app/">
                                         <p className="item-text-category">Ukrainian movies</p>
                                     </a>
                                     <h2 className="item-text-title">MERN + Strapi CMS</h2>
