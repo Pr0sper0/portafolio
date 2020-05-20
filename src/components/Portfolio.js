@@ -41,7 +41,7 @@ export default function Portfolio() {
                         </div>
                         <div className="item">
                             <div className="item-image">
-                                <img src={require("../img/items/item3_3.png")} alt="" />
+                                <img src={require("../img/items/item3_1.png")} alt="" />
                             </div>
                             <div className="item-text">
                                 <div className="item-text-wrap">
