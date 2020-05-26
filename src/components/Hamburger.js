@@ -1,36 +1,33 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export default class Hamburger extends Component {
+function Hamburger() {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            isChecked: false,
-        }
+    const [isChecked, toggleCheck] = useState(false);
+
+
+    function showMenu() {
+        toggleCheck(!isChecked)
     }
 
-    showMenu = () => (
-        this.setState({
-            isChecked: !this.state.isChecked
-        })
+
+    return (
+        <div className="menu-wrap">
+            <input type="checkbox" onChange={showMenu} checked={isChecked} className="toggler"></input>
+            <div className="hamburger"><div></div></div>
+            <div className="menu">
+                <div><div><ul>
+                    <li><Link to="/" onClick={showMenu}>Home</Link></li>
+                    <li><Link to="/about" onClick={showMenu}>About</Link></li>
+                    <li><Link to="/experience" onClick={showMenu}>Experience</Link></li>
+                    <li><Link to="/portfolio" onClick={showMenu}>Portfolio</Link></li>
+                    <li><Link to="/contact" onClick={showMenu}>Contact</Link></li>
+                </ul></div></div>
+            </div>
+        </div >
     )
 
-    render() {
-        return (
-            <div className="menu-wrap">
-                <input type="checkbox" onClick={this.showMenu} checked={this.state.isChecked} className="toggler"></input>
-                <div className="hamburger"><div></div></div>
-                <div className="menu">
-                    <div><div><ul>
-                        <li><Link to="/" onClick={this.showMenu}>Home</Link></li>
-                        <li><Link to="/about" onClick={this.showMenu}>About</Link></li>
-                        <li><Link to="/experience" onClick={this.showMenu}>Experience</Link></li>
-                        <li><Link to="/portfolio" onClick={this.showMenu}>Portfolio</Link></li>
-                        <li><Link to="/contact" onClick={this.showMenu}>Contact</Link></li>
-                    </ul></div></div>
-                </div>
-            </div >
-        )
-    }
 }
+
+
+export default Hamburger;
