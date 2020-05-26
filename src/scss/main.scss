@@ -45,6 +45,24 @@ img {
   display: block;
 }
 
+#loading-ring {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $dark-blue;
+
+  transition: background-color 0.5s ease-out;
+
+  :after {
+    background-color: $dark-blue;
+    cursor: pointer;
+    :hover {
+      background-color: green;
+    }
+  }
+}
+
 // Logo
 #logo {
   width: 70px;

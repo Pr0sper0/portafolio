@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App style={{ transition: 'all 2s' }} />
   </React.StrictMode>,
   document.getElementById('root')
 );

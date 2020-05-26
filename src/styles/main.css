@@ -473,6 +473,19 @@ img {
   position: relative;
   display: block; }
 
+#loading-ring {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #202029;
+  transition: background-color 0.5s ease-out; }
+  #loading-ring :after {
+    background-color: #202029;
+    cursor: pointer; }
+    #loading-ring :after :hover {
+      background-color: green; }
+
 #logo {
   width: 70px;
   height: 70px;
