@@ -10,9 +10,7 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 
 import { DualRing } from 'react-awesome-spinners';
-import Background from "./img/background/P50520-202802-min.jpg";
 
-const HomePage = lazy(() => import("./components/Home"));
 
 function App() {
 
@@ -21,11 +19,10 @@ function App() {
   let image = {};
 
   const imageLoad = async () => {
-    const response = await fetch(`./img/background/P50520-202802-min.jpg`);
-    image = await response.body;
-    //console.log(image);
-    //setTimeout(() => toggleLoading(false), 1000)
-    toggleLoading(false);
+    // const response = await fetch(Background);
+    // image = await response.url;
+    setTimeout(() => toggleLoading(false), 1000)
+
   }
 
   useEffect(() => {
