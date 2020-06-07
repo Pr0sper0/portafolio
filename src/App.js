@@ -19,10 +19,11 @@ function App() {
   let image = {};
 
   const imageLoad = async () => {
-    // const response = await fetch(Background);
-    // image = await response.url;
-    setTimeout(() => toggleLoading(false), 1000)
-
+    const response = await fetch("/static/media/P50520-202802-min.2f6fc14a.jpg");
+    image = await response.url;
+    //console.log(image);
+    //const res = await setTimeout(() => toggleLoading(false), 1500)
+    await toggleLoading(false);
   }
 
   useEffect(() => {
