@@ -770,6 +770,14 @@ img {
   border-radius: 50%;
   margin-right: 0.3rem; }
 
+#work-a .items .item .item-image .image-thumb {
+  filter: blur(20px);
+  transform: scale(1.1);
+  transition: visibility 0ms ease 400ms; }
+
+#work-a .items .item .item-image .image-full {
+  transition: opacity 400ms 0ms; }
+
 #contact-a .text-fields {
   display: grid;
   grid-template-areas: "name email" "subject phone" "message message";
