@@ -19,7 +19,7 @@ function App() {
   let image = {};
 
   const imageLoad = async () => {
-    const response = await fetch("/static/media/P50520-202802-min.2f6fc14a.jpg");
+    const response = await fetch("/static/media/P50520-202802-min.547f05fa.jpg");
     const image = await response.blob();
     //console.log(image);
     const res = setTimeout(() => toggleLoading(false), 500)
