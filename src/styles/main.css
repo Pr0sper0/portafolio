@@ -446,10 +446,24 @@ input[class^="btn-"]:hover {
   margin: 0;
   padding: 0; }
 
+.App {
+  text-align: center; }
+
 body {
   background: #f0f0f0;
   font-family: "Raleway", sans-serif;
-  line-height: 1.6; }
+  line-height: 1.6;
+  overflow-x: hidden; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */ }
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000; }
 
 a {
   text-decoration: none;
