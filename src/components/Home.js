@@ -1,23 +1,50 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import Background from "../img/background/P50520-202802-min.jpg";
 
-
+/* 
 const styles = {
     landingContainer : {
         background: `linear-gradient(rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.6)), url(${Background})`,  
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        transition: 'background-color 1s ease-out',
+        onLoad: ''
     }
-}
+} */
 
 export default function Home(props) {
+
+    
+  const [image, imageLoading] = useState(Background);
+
+  let imageUrl = {};
+
+  const imageLoad = async () => {
+    const response = await fetch(Background);
+    imageUrl = await response;
+    imageLoading(response);
+    console.log('props', props);
+    props.url(false);
+   // const res = setTimeout(() => toggleLoading(false), 500)
+    
+  }
+
+  useEffect(() => {
+    imageLoad();
+
+  }, [])
     return (
         <div className="main-content">
             <div id="main" className="site-main" >
-                <div id="main-home"  style={styles.landingContainer}>
+                <div id="main-home"  style={{ 
+                                                background: `linear-gradient(rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.6)), url(${image})`,
+                                                backgroundPosition: 'center',
+                                                backgroundSize: 'cover',
+                                                backgroundRepeat: 'no-repeat',
+                                                transition: 'background-color 1s ease-out'}}>
                     <h1>
                         I Am Valerii 
                     </h1>

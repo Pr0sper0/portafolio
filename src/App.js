@@ -8,28 +8,34 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-
+import Background from "./img/background/P50520-202802-min.jpg";
 import { DualRing } from 'react-awesome-spinners';
 
 
 function App() {
 
   const [loading, toggleLoading] = useState(true);
+  const [image, toggleImage] = useState("");
 
-  let imageUrl = {};
+  let imageUrl;
 
-  /*   const imageLoad = async () => {
-      const response = await fetch("./img/background/P50520-202802-min.jpg");
-      imageUrl = await response.url;
-      console.log(response);
-      const res = setTimeout(() => toggleLoading(false), 500)
-      toggleLoading(false);
-    } */
+  const imageLoad = async () => {
+    // imageUrl = await fetch(Background);
+    // await toggleImage(imageUrl.url);
+    setTimeout(() => toggleLoading(false), 500)
+
+  }
 
   useEffect(() => {
-    const res = setTimeout(() => toggleLoading(false), 500)
+    setTimeout(() => toggleLoading(false), 500)
 
   }, [])
+
+  let changeToggel = () => {
+    setTimeout(() => toggleLoading(false), 500)
+  }
+
+
 
   return (
 
@@ -45,7 +51,7 @@ function App() {
             <Route exact path="/experience" component={Experience} />
             <Route exact path="/portfolio" component={Portfolio} />
             <Route exact path="/contact" component={Contact} />
-            <Route path="/" render={(props) => <Home {...props} url={imageUrl} />} />
+            <Route path="/" render={(props) => <Home url={changeToggel} />} />
           </Switch>
         </HashRouter>
       </div>
