@@ -20,14 +20,15 @@ export default function Home(props) {
     
   const [image, imageLoading] = useState(Background);
 
+/*  
   let imageUrl = {};
-
+ 
   const imageLoad = async () => {
     const response = await fetch(Background);
     imageUrl = await response;
     imageLoading(response);
     console.log('props', props);
-    props.url(false);
+    //props.url(false);
    // const res = setTimeout(() => toggleLoading(false), 500)
     
   }
@@ -35,7 +36,7 @@ export default function Home(props) {
   useEffect(() => {
     imageLoad();
 
-  }, [])
+  }, []) */
     return (
         <div className="main-content">
             <div id="main" className="site-main" >
