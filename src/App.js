@@ -16,18 +16,18 @@ function App() {
 
   const [loading, toggleLoading] = useState(true);
 
-  let image = {};
+  let imageUrl = {};
 
-  const imageLoad = async () => {
-    const response = await fetch("/static/media/P50520-202802-min.547f05fa.jpg");
-    const image = await response.blob();
-    //console.log(image);
-    const res = setTimeout(() => toggleLoading(false), 500)
-    //toggleLoading(false);
-  }
+  /*   const imageLoad = async () => {
+      const response = await fetch("./img/background/P50520-202802-min.jpg");
+      imageUrl = await response.url;
+      console.log(response);
+      const res = setTimeout(() => toggleLoading(false), 500)
+      toggleLoading(false);
+    } */
 
   useEffect(() => {
-    imageLoad();
+    const res = setTimeout(() => toggleLoading(false), 500)
 
   }, [])
 
@@ -45,7 +45,7 @@ function App() {
             <Route exact path="/experience" component={Experience} />
             <Route exact path="/portfolio" component={Portfolio} />
             <Route exact path="/contact" component={Contact} />
-            <Route path="/" component={Home} />
+            <Route path="/" render={(props) => <Home {...props} url={imageUrl} />} />
           </Switch>
         </HashRouter>
       </div>

@@ -4,13 +4,20 @@ import Typewriter from 'typewriter-effect';
 import Background from "../img/background/P50520-202802-min.jpg";
 
 
+const styles = {
+    landingContainer : {
+        background: `linear-gradient(rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.6)), url(${Background})`,  
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+    }
+}
+
 export default function Home(props) {
     return (
         <div className="main-content">
             <div id="main" className="site-main" >
-                <div id="main-home" style={{background: `linear-gradient(rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.6)), url(${Background})`,  backgroundPosition: 'center',
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat'}}>
+                <div id="main-home"  style={styles.landingContainer}>
                     <h1>
                         I Am Valerii 
                     </h1>
