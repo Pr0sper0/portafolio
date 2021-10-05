@@ -48,7 +48,7 @@ class Experience extends React.Component {
 
                                 -	Development of new Information Collection System.
                                 <p>
-                                    Technologies: React.js, JavaScript, Spring Rest, Oracle/SQL, HTML/CSS
+                                    Technologies: React.js, Spring Rest, JavaScript, Oracle/SQL, HTML/CSS
                                 </p>
                             </Animated>
                         </li>
@@ -67,6 +67,7 @@ class Experience extends React.Component {
                                 </p>
                             </Animated>
                         </li>
+
                         <li className="show">
                             <Animated animationInDelay="1750" animationIn="fadeInUp">
 
