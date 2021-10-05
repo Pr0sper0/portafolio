@@ -27,14 +27,14 @@ class Experience extends React.Component {
                             <Animated animationInDelay="250" animationIn="fadeInUp">
 
                                 <h3>
-                                    <i className="fas fa-chevron-right">November 2018 – till now </i>
+                                    <i className="fas fa-chevron-right">July 2020 – till now </i>
                                 </h3>
-                                <h4>GlobalLogic </h4>
+                                <h4>Ciklum </h4>
 
-                                    -	Development of new Information Collection System.
-                                    <p>
-                                    Technologies: React.js, JavaScript, Spring Rest, Oracle/SQL, HTML, CSS
-                                    </p>
+                                -	Application for trading system data operation. Engineering of a new Data management system based on web-based Add-in and Excel JavaScript API;
+                                <p>
+                                    Technologies: React.js; Node; Typescript; Excel JavaScript API; HTML/CSS; Webpack;
+                                </p>
                             </Animated>
                         </li>
 
@@ -42,66 +42,81 @@ class Experience extends React.Component {
                             <Animated animationInDelay="750" animationIn="fadeInUp">
 
                                 <h3>
-                                    <i className="fas fa-chevron-right">March 2015 </i>
+                                    <i className="fas fa-chevron-right">November 2018 – June 2019 </i>
                                 </h3>
                                 <h4>GlobalLogic </h4>
 
-                                    -	Development and	Maintenance engineering in Java products using desktop and web specification.
-                                    <p>
-                                    Technologies: Java SE, Java EE, JSP, JavaScript, HTML, CSS, Shell, XML, SQL; Apache, Tomcat, IIS
-                                    </p>
+                                -	Development of new Information Collection System.
+                                <p>
+                                    Technologies: React.js, JavaScript, Spring Rest, Oracle/SQL, HTML/CSS
+                                </p>
                             </Animated>
                         </li>
+
                         <li className="show">
                             <Animated animationInDelay="1250" animationIn="fadeInUp">
 
                                 <h3>
-                                    <i className="fas fa-chevron-right">July 2014 – March 2015 </i>
+                                    <i className="fas fa-chevron-right">March 2015 - June 2020 </i>
                                 </h3>
-                                <h4>Kyivstar Telecom </h4>
+                                <h4>GlobalLogic </h4>
 
-                                    -   Development and Maintenance of customer-service applications;
-                                    -	Customer support with SMS/MMS advertising services;
-                                    -	fetch on request from the RDBMS(ORACLE);
-
-                                    <p>
-                                    Technologies: Java EE, JSP, HTML, XML, SQL
-                                    </p>
+                                -	Development and	Maintenance engineering in Java products using desktop and web specification.
+                                <p>
+                                    Technologies: Java SE, Java EE, JSP, JavaScript, HTML, CSS, Shell, XML, SQL; Apache, Tomcat, IIS
+                                </p>
                             </Animated>
                         </li>
                         <li className="show">
                             <Animated animationInDelay="1750" animationIn="fadeInUp">
 
                                 <h3>
-                                    <i className="fas fa-chevron-right">May 2013 – July 2014 </i>
+                                    <i className="fas fa-chevron-right">July 2014 – March 2015 </i>
                                 </h3>
-                                <h4>Government Enterprise “Antonov”  </h4>
+                                <h4>Kyivstar Telecom </h4>
 
-                                    -   Development of new Document management system
+                                -   Development and Maintenance of customer-service applications;
+                                -	Customer support with SMS/MMS advertising services;
+                                -	fetch on request from the RDBMS(ORACLE);
 
-                                    <p>
-                                    Technologies: Java EE, JPA, JSP, JSF, JavaScript;
-                                    Glassfish Server; RDBMS: MySQL; Web: XHTML, CSS;
-                                    </p>
+                                <p>
+                                    Technologies: Java EE, JSP, HTML, XML, SQL
+                                </p>
                             </Animated>
                         </li>
                         <li className="show">
                             <Animated animationInDelay="2250" animationIn="fadeInUp">
 
                                 <h3>
-                                    <i className="fas fa-chevron-right">March 2011 - May 2013</i>
+                                    <i className="fas fa-chevron-right">May 2013 – July 2014 </i>
                                 </h3>
                                 <h4>Government Enterprise “Antonov”  </h4>
 
-                                    - Desktop applications development for aviation flight analysis;
+                                -   Development of new Document management system
 
-                                    <p>
-                                    Technologies: C++ GUI, MFC;
-                                    </p>
+                                <p>
+                                    Technologies: Java EE, JPA, JSP, JSF, JavaScript;
+                                    Glassfish Server; RDBMS: MySQL; Web: XHTML, CSS;
+                                </p>
                             </Animated>
                         </li>
                         <li className="show">
                             <Animated animationInDelay="2750" animationIn="fadeInUp">
+
+                                <h3>
+                                    <i className="fas fa-chevron-right">March 2011 - May 2013</i>
+                                </h3>
+                                <h4>Government Enterprise “Antonov”  </h4>
+
+                                - Desktop applications development for aviation flight analysis;
+
+                                <p>
+                                    Technologies: C++ GUI, MFC;
+                                </p>
+                            </Animated>
+                        </li>
+                        <li className="show">
+                            <Animated animationInDelay="3250" animationIn="fadeInUp">
 
                                 <h3>
                                     <i className="fas fa-chevron-right">February 2010 - March 2011</i>
@@ -110,24 +125,24 @@ class Experience extends React.Component {
 
                                 - Financial turnover analysis;
 
-                                    <p>
+                                <p>
                                     Technologies: Access, Excel, 1C;
-                                    </p>
+                                </p>
                             </Animated>
                         </li>
                         <li className="show">
-                            <Animated animationInDelay="3250" animationIn="fadeInUp">
+                            <Animated animationInDelay="3750" animationIn="fadeInUp">
 
                                 <h3>
                                     <i className="fas fa-chevron-right">February 2008 - June 2009</i>
                                 </h3>
                                 <h4>Bank "Pravex" </h4>
 
-                                    - Financial and credit history analysis;
+                                - Financial and credit history analysis;
 
-                                    <p>
+                                <p>
                                     Technologies: Access, Excel;
-                                    </p>
+                                </p>
                             </Animated>
                         </li>
                     </ul>
