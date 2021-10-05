@@ -42,7 +42,7 @@ class Experience extends React.Component {
                             <Animated animationInDelay="750" animationIn="fadeInUp">
 
                                 <h3>
-                                    <i className="fas fa-chevron-right">November 2018 – June 2019 </i>
+                                    <i className="fas fa-chevron-right">November 2018 – early 2020 </i>
                                 </h3>
                                 <h4>GlobalLogic </h4>
 
