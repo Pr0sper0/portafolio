@@ -1,22 +1,26 @@
 import React from 'react';
 
+import item1_min from "../img/items/item1_3-min.png";
+import item2 from "../img/items/item2_2-min.png";
+import item3 from "../img/items/item3_1-min.png";
+
 export default function Portfolio() {
     const [isLoaded, setIsLoaded] = React.useState(false);
     return (
         <div className="main-content">
             {/* <!-- Section A: Gallery --> */}
             <section id="work-a" className="text-center py-3">
-                <div className="conainer">
+                <div className="container">
                     <h2 className="section-title">My work</h2>
                     <div className="bottom-line"></div>
                     <p className="lead">
                         Check out some of my projects
-            </p>
+                    </p>
                     <div className="items">
                         <div className="item">
                             <div className="item-image">
-                                <img src={require("../img/items/thumbs/item1_3-min-min.png")} alt="" className="image-thumb" style={{ visibility: isLoaded ? "hidden" : "visible" }} />
-                                <img onLoad={() => { setIsLoaded(true) }} src={require("../img/items/item1_3-min.png")} alt="" className="image-full" style={{ opacity: isLoaded ? 1 : 0 }} />
+                                <img src={item1_min} alt="" className="image-thumb" style={{ visibility: isLoaded ? "hidden" : "visible" }} />
+                                <img onLoad={() => { setIsLoaded(true) }} src={item1_min} alt="" className="image-full" style={{ opacity: isLoaded ? 1 : 0 }} />
                             </div>
                             <div className="item-text">
                                 <div className="item-text-wrap">
@@ -29,8 +33,8 @@ export default function Portfolio() {
                         </div>
                         <div className="item">
                             <div className="item-image">
-                                <img src={require("../img/items/thumbs/item2_2-min-min.png")} alt="" className="image-thumb" style={{ visibility: isLoaded ? "hidden" : "visible" }} />
-                                <img onLoad={() => { setIsLoaded(true) }} src={require("../img/items/item2_2-min.png")} alt="" className="image-full" style={{ opacity: isLoaded ? 1 : 0 }} />
+                                <img src='${item2}' alt="" className="image-thumb" style={{ visibility: isLoaded ? "hidden" : "visible" }} />
+                                <img onLoad={() => { setIsLoaded(true) }} src={item2} alt="" className="image-full" style={{ opacity: isLoaded ? 1 : 0 }} />
                             </div>
                             <div className="item-text">
                                 <div className="item-text-wrap">
@@ -43,8 +47,8 @@ export default function Portfolio() {
                         </div>
                         <div className="item">
                             <div className="item-image">
-                                <img src={require("../img/items/thumbs/item3_1-min.png")} alt="" className="image-thumb" style={{ visibility: isLoaded ? "hidden" : "visible" }} />
-                                <img onLoad={() => { setIsLoaded(true) }} src={require("../img/items/item3_1.png")} alt="" className="image-full" style={{ opacity: isLoaded ? 1 : 0 }} />
+                                <img src="${item3}" alt="" className="image-thumb" style={{ visibility: isLoaded ? "hidden" : "visible" }} />
+                                <img onLoad={() => { setIsLoaded(true) }} src={item3} alt="" className="image-full" style={{ opacity: isLoaded ? 1 : 0 }} />
                             </div>
                             <div className="item-text">
                                 <div className="item-text-wrap">

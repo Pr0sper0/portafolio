@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Animated } from 'react-animated-css';
 
+import aboutImg from "../img/background/P50531-141010_small-min.jpg";
+import kholImg from "../img/testimonials/i_kholodniuk-min.jpg";
+import shovkImg from "../img/testimonials/o_shovkoplias-min.jpg";
+import onoprImg from "../img/testimonials/i_onoprienko-min.jpg";
+import voitImg from "../img/testimonials/i_voitushenko-min.jpg";
+
 export default function About() {
+    const [isLoaded, setIsLoaded] = useState(false);
     return (
         <div className="main-content">
             {/* <!-- Section A: Info --> */}
@@ -11,10 +18,10 @@ export default function About() {
                     <div className="bottom-line"></div>
                     <p className="lead">
                         Let me tell you a little about myself and what I do...
-        </p>
+                    </p>
                     <div className="about-info">
 
-                        <img src={require("../img/background/P50531-141010_small-min.jpg")} alt="" className="bio-image" />
+                        <img onLoad={() => { setIsLoaded(true) }} src={aboutImg} alt="" className="image-full" style={{ opacity: isLoaded ? 1 : 0 }} />
 
                         <div className="bio bg-light">
                             <Animated animationInDelay="300" animationInDuration="3000" animationIn="fadeIn" isVisible={true}>
@@ -28,7 +35,7 @@ export default function About() {
                                     I am not know-it-all person but I do my best to be empathetic both with friends and partners. Our goal is also my own goal. And we all are in one big boat
                                     trying to paddle to better coast!:)
 
-            </p> </Animated>
+                                </p> </Animated>
                         </div>
 
                         <Animated animationInDelay="1000" animationIn="lightSpeedIn">
@@ -38,7 +45,7 @@ export default function About() {
                                 <p>
                                     I am Java oriented programmer with Experience in back-end as well as
                                     in front-end stack.
-            </p>
+                                </p>
                             </div></Animated>
                         <Animated animationInDelay="1250" animationIn="fadeInRight">
                             <div className="award-2">
@@ -46,7 +53,7 @@ export default function About() {
                                 <h3>Web development</h3>
                                 <p>
                                     I am a good specialist in modern web-site technologies, Javascript and Frameworks.
-            </p>
+                                </p>
                             </div></Animated>
                         <Animated animationInDelay="1600" animationIn="wobble" >
                             <div className="award-3">
@@ -54,7 +61,7 @@ export default function About() {
                                 <h3>Data management</h3>
                                 <p>
                                     I have a wide experience with different types of Databases.
-            </p>
+                                </p>
                             </div></Animated>
                     </div>
                 </div>
@@ -127,9 +134,9 @@ export default function About() {
                             <p>
                                 Valerii is an excellent technical expert, writes in several programming languages.
                                 He knows how to properly motivate, listen and direct, working with him was a pleasure.
-            </p>
+                            </p>
                             <ul>
-                                <li><img src={require("../img/testimonials/i_kholodniuk-min.jpg")} alt="" /></li>
+                                <li><img src={kholImg} alt="" /></li>
                                 <li>Ievgeniia Kholodniuk, QA specialist</li>
                             </ul>
                         </div>
@@ -137,27 +144,27 @@ export default function About() {
                             <p>
                                 I appreciate meeting with Valery. He is a highly skilled specialist, working with him makes
                                 it easy to quickly understand information and build up own knowledge.
-            </p>
+                            </p>
                             <ul>
-                                <li><img src={require("../img/testimonials/o_shovkoplias-min.jpg")} alt="" /></li>
+                                <li><img src={shovkImg} alt="" /></li>
                                 <li>Oleksii Shovkoplias, Full-stack dev</li>
                             </ul>
                         </div>
                         <div>
                             <p>
                                 I hope for a productive and no less effective work in the future!
-            </p>
+                            </p>
                             <ul>
-                                <li><img src={require("../img/testimonials/i_onoprienko-min.jpg")} alt="" /></li>
+                                <li><img src={onoprImg} alt="" /></li>
                                 <li>Ievgen Onoprienko, QA automation</li>
                             </ul>
                         </div>
                         <div>
                             <p>
                                 In difficult situations, Valerii will not leave without help
-            </p>
+                            </p>
                             <ul>
-                                <li><img src={require("../img/testimonials/i_voitushenko-min.jpg")} alt="" /></li>
+                                <li><img src={voitImg} alt="" /></li>
                                 <li>Ievgen Voitushenko, DB operationist</li>
                             </ul>
                         </div>
