@@ -32,7 +32,7 @@ export default function About() {
                                     As for me I always try to be proactive and openminded in new challenges. I always find a solution in optimal time to bring satisfaction to all of us.
                                     <div></div>
                                     <b>Striving for excellence motivates me. </b>
-                                    I am not know-it-all person but I do my best to be empathetic both with friends and partners. Our common goal is also my own goal. We all sail in the same boat
+                                    I am not know-it-all person but I do my best to be responsive both with friends and partners. Our common goal is also my own goal. We all sail in the same boat
                                     trying to get to the best bank!:)
 
                                 </p> </Animated>
