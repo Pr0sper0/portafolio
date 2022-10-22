@@ -43,7 +43,7 @@ export default function Navigation() {
                                     <i className="fab fa-github"></i>
                                     <i className="fab fa-linkedin"></i>
                                 </div>
-                                <p>Copyright &copy; 2021. All Rights Reserved</p>
+                                <p>Copyright &copy; 2022. All Rights Reserved</p>
                             </div>
                         </footer>
                     </div>
