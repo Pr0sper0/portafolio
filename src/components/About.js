@@ -27,13 +27,13 @@ export default function About() {
                             <Animated animationInDelay="300" animationInDuration="3000" animationIn="fadeIn" isVisible={true}>
                                 <h4>Your Project Is In Safe Hands</h4>
                                 <p style={{ justifyContent: 'flex-start', textAlign: 'left' }}>
-                                    <b>Hi! I am Valerii</b>, and I pretend to be a companion for your next Project.
-                                    I practice in variant approaches to solve different assignments and I am sure we can find the best One!
-                                    As for me I always try to be proactive and openminded in new challenges. I try to find a solution in minimal time to bring satisfaction to all of us.
+                                    <b>Hi! I am Valerii</b>, and  I apply for a partnership on your next project.
+                                    I practice in various approaches to solve different assignments and I am sure we can find the best One!
+                                    As for me I always try to be proactive and openminded in new challenges. I always find a solution in optimal time to bring satisfaction to all of us.
                                     <div></div>
                                     <b>Striving for excellence motivates me. </b>
-                                    I am not know-it-all person but I do my best to be empathetic both with friends and partners. Our goal is also my own goal. And we all are in one big boat
-                                    trying to paddle to better coast!:)
+                                    I am not know-it-all person but I do my best to be empathetic both with friends and partners. Our common goal is also my own goal. We all sail in the same boat
+                                    trying to get to the best bank!:)
 
                                 </p> </Animated>
                         </div>
