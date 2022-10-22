@@ -27,7 +27,7 @@ export default function About() {
                             <Animated animationInDelay="300" animationInDuration="3000" animationIn="fadeIn" isVisible={true}>
                                 <h4>Your Project Is In Safe Hands</h4>
                                 <p style={{ justifyContent: 'flex-start', textAlign: 'left' }}>
-                                    <b>Hi! I am Valerii</b>, and  I apply for a partnership on your next project.
+                                    <b>Hi! I am Valerii</b>, and I apply for a partnership in your next project.
                                     I practice in various approaches to solve different assignments and I am sure we can find the best One!
                                     As for me I always try to be proactive and openminded in new challenges. I always find a solution in optimal time to bring satisfaction to all of us.
                                     <div></div>
