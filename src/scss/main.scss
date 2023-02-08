@@ -1,9 +1,9 @@
-@import "config";
-@import "utility";
-@import "item_grid";
-@import "media";
-@import "experience";
-@import "hamburger";
+@import 'config';
+@import 'utility';
+@import 'item_grid';
+@import 'media';
+@import 'experience';
+@import 'hamburger';
 
 // General Styles
 * {
@@ -17,7 +17,7 @@
 
 body {
   background: $light-color;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -146,7 +146,7 @@ img {
     border-right: 2px solid #723908;
 
     .folio-image {
-      background-image: url(../img/folio-image_ams6.jpg);
+      background-image: url(../img/folio-image_2023.jpg);
       width: 160px;
       height: 160px;
       background-size: cover;
@@ -284,7 +284,7 @@ img {
   }
   // Section C
   &-c {
-    font-family: "Raleway";
+    font-family: 'Raleway';
     .process {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -342,8 +342,8 @@ img {
     .about-info {
       display: grid;
       grid-template-areas:
-        "bioimage bio bio"
-        "aw1 aw2 aw3 ";
+        'bioimage bio bio'
+        'aw1 aw2 aw3 ';
       grid-gap: 1.2rem;
     }
 
@@ -504,9 +504,9 @@ img {
     .text-fields {
       display: grid;
       grid-template-areas:
-        "name email"
-        "subject phone"
-        "message message";
+        'name email'
+        'subject phone'
+        'message message';
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
 
@@ -533,8 +533,8 @@ img {
       }
     }
 
-    button[type="submit"] {
-      width: "50%";
+    button[type='submit'] {
+      width: '50%';
     }
   }
 
@@ -558,4 +558,4 @@ img {
 }
 
 // Import media queries
-@import "media";
+@import 'media';

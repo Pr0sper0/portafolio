@@ -36,7 +36,7 @@ class Experience extends React.Component {
               </Animated>
             </li>
             <li className='show'>
-              <Animated animationInDelay='250' animationIn='fadeInUp'>
+              <Animated animationInDelay='750' animationIn='fadeInUp'>
                 <h3>
                   <i className='fas fa-chevron-right'>Nov 2021 – Oct 2022 </i>
                 </h3>
@@ -52,7 +52,7 @@ class Experience extends React.Component {
             </li>
 
             <li className='show'>
-              <Animated animationInDelay='750' animationIn='fadeInUp'>
+              <Animated animationInDelay='1250' animationIn='fadeInUp'>
                 <h3>
                   <i className='fas fa-chevron-right'>July 2020 – Oct 2021 </i>
                 </h3>
@@ -67,7 +67,7 @@ class Experience extends React.Component {
             </li>
 
             <li className='show'>
-              <Animated animationInDelay='1250' animationIn='fadeInUp'>
+              <Animated animationInDelay='1750' animationIn='fadeInUp'>
                 <h3>
                   <i className='fas fa-chevron-right'>
                     March 2015 - June 2020{' '}
@@ -83,7 +83,7 @@ class Experience extends React.Component {
             </li>
 
             <li className='show'>
-              <Animated animationInDelay='1750' animationIn='fadeInUp'>
+              <Animated animationInDelay='2250' animationIn='fadeInUp'>
                 <h3>
                   <i className='fas fa-chevron-right'>
                     July 2014 – March 2015{' '}
@@ -96,7 +96,7 @@ class Experience extends React.Component {
               </Animated>
             </li>
             <li className='show'>
-              <Animated animationInDelay='2250' animationIn='fadeInUp'>
+              <Animated animationInDelay='2750' animationIn='fadeInUp'>
                 <h3>
                   <i className='fas fa-chevron-right'>May 2013 – July 2014 </i>
                 </h3>
@@ -109,7 +109,7 @@ class Experience extends React.Component {
               </Animated>
             </li>
             <li className='show'>
-              <Animated animationInDelay='2750' animationIn='fadeInUp'>
+              <Animated animationInDelay='3250' animationIn='fadeInUp'>
                 <h3>
                   <i className='fas fa-chevron-right'>March 2011 - May 2013</i>
                 </h3>
@@ -119,7 +119,7 @@ class Experience extends React.Component {
               </Animated>
             </li>
             <li className='show'>
-              <Animated animationInDelay='3250' animationIn='fadeInUp'>
+              <Animated animationInDelay='3750' animationIn='fadeInUp'>
                 <h3>
                   <i className='fas fa-chevron-right'>
                     February 2010 - March 2011
@@ -130,7 +130,7 @@ class Experience extends React.Component {
               </Animated>
             </li>
             <li className='show'>
-              <Animated animationInDelay='3750' animationIn='fadeInUp'>
+              <Animated animationInDelay='4250' animationIn='fadeInUp'>
                 <h3>
                   <i className='fas fa-chevron-right'>
                     February 2008 - June 2009
